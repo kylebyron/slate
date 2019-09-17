@@ -17,7 +17,7 @@ includes:
 search: true
 ---
 
-# Introduction
+# Hart API Developer Portal
 
 Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
@@ -53,9 +53,9 @@ const kittn = require('kittn');
 let api = kittn.authorize('meowmeowmeow');
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `xyz` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+Hart uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
 
 Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
