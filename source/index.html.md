@@ -19,7 +19,11 @@ search: true
 
 # Hart API Developer Portal
 
+<<<<<<< HEAD
 Welcome to the HART API! You can use our API to access HART API endpoints.
+=======
+Welcome to the Hart API! You can use our API to access Hart API endpoints.
+>>>>>>> a28498ab2409addbb68466945032f835191d513a
 
 We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
