@@ -25,6 +25,10 @@ This reference includes documentation for 3 endpoints: LoginRequest, ListCategor
 
 This endpoint allows you to login to your account.
 
+```shell
+curl -H "Authorization: 12398713987123987" "http://tiktok/api/LoginRequest?mix_mode&username&email&password"
+```
+
 ### Query Parameters
 
 Parameter | Description
@@ -37,13 +41,14 @@ account   | The account number.
 password  | The account password.
 captcha   | The captcha answer. Optional - only required if captcha was shown.
 
-```shell
-curl "http://tiktok/api/LoginRequest" -H "Authorization: 12398713987123987"
-```
 
 ## ListCategoriesRequest
 
 This endpoint allows you to retrieve a list of popular categories (or hashtags). Returns ListCategoriesResponse.
+
+```shell
+curl -H "Authorization: 12398713987123987" "http://tiktok/api/ListCategoriesRequest?category_list&aweme_list&category_type" 
+```
 
 ### Query Parameters
 
@@ -55,13 +60,14 @@ category_type  | The type of category. Type: Number.
 challenge_info | Information about the category. 
 desc           | A description of the category. For example: "Trending"
 
-```shell
-curl "http://tiktok/api/ListCategoriesRequest" -H "Authorization: 12398713987123987"
-```
 
 ## ListPostsInHashtagRequest
 
 This endpoint allows you to retrieve a list of posts containing a specific hashtag. Returns ListPostsInHashtagResponse.
+
+```shell
+curl -H "Authorization: 12398713987123987" "http://tiktok/api/ListPostsInHashtagRequest?ch_id&query_type&type" 
+```
 
 ### Query Parameters
 
@@ -71,9 +77,7 @@ ch_id          | The ID of the hashtag.
 query_type     | Need description.
 type           | Need description.
 
-```shell
-curl "http://tiktok/api/ListPostsInHashtagRequest" -H "Authorization: 12398713987123987"
-```
+
 
 
 
