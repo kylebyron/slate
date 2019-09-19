@@ -23,10 +23,10 @@ This reference includes documentation for 3 endpoints: LoginRequest, ListCategor
 
 ## LoginRequest
 
-This endpoint allows you to login to your account.
+This endpoint allows you to login to a TikTok account.
 
 ```shell
-curl -H "Authorization: 12398713987123987" "http://tiktok/api/LoginRequest?mix_mode&username&email&password"
+curl -X GET "http://tiktok/api/LoginRequest?mix_mode&username&email&password"
 ```
 
 ### Query Parameters
@@ -47,7 +47,7 @@ captcha   | The captcha answer. Optional - only required if captcha was shown.
 This endpoint allows you to retrieve a list of popular categories (or hashtags). Returns ListCategoriesResponse.
 
 ```shell
-curl -H "Authorization: 12398713987123987" "http://tiktok/api/ListCategoriesRequest?category_list&aweme_list&category_type" 
+curl -X GET "http://tiktok/api/ListCategoriesRequest?category_list&aweme_list&category_type" 
 ```
 
 ### Query Parameters
@@ -66,7 +66,7 @@ desc           | A description of the category. For example: "Trending"
 This endpoint allows you to retrieve a list of posts containing a specific hashtag. Returns ListPostsInHashtagResponse.
 
 ```shell
-curl -H "Authorization: 12398713987123987" "http://tiktok/api/ListPostsInHashtagRequest?ch_id&query_type&type" 
+curl -X GET "http://tiktok/api/ListPostsInHashtagRequest?ch_id&query_type&type" 
 ```
 
 ### Query Parameters
