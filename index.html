@@ -250,8 +250,8 @@
         <h1 id='api-reference'>API Reference</h1>
 <p>This reference includes documentation for 3 endpoints: LoginRequest, ListCategoriesRequest and ListPostsInHashtagRequest.</p>
 <h2 id='loginrequest'>LoginRequest</h2>
-<p>This endpoint allows you to login to your account.</p>
-<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Authorization: 12398713987123987"</span> <span class="s2">"http://tiktok/api/LoginRequest?mix_mode&amp;username&amp;email&amp;password"</span>
+<p>This endpoint allows you to login to a TikTok account.</p>
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"http://tiktok/api/LoginRequest?mix_mode&amp;username&amp;email&amp;password"</span>
 </code></pre><h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -290,7 +290,7 @@
 </tbody></table>
 <h2 id='listcategoriesrequest'>ListCategoriesRequest</h2>
 <p>This endpoint allows you to retrieve a list of popular categories (or hashtags). Returns ListCategoriesResponse.</p>
-<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Authorization: 12398713987123987"</span> <span class="s2">"http://tiktok/api/ListCategoriesRequest?category_list&amp;aweme_list&amp;category_type"</span> 
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"http://tiktok/api/ListCategoriesRequest?category_list&amp;aweme_list&amp;category_type"</span> 
 </code></pre><h3 id='query-parameters-2'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -321,7 +321,7 @@
 </tbody></table>
 <h2 id='listpostsinhashtagrequest'>ListPostsInHashtagRequest</h2>
 <p>This endpoint allows you to retrieve a list of posts containing a specific hashtag. Returns ListPostsInHashtagResponse.</p>
-<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Authorization: 12398713987123987"</span> <span class="s2">"http://tiktok/api/ListPostsInHashtagRequest?ch_id&amp;query_type&amp;type"</span> 
+<pre class="highlight shell tab-shell"><code>curl -X GET <span class="s2">"http://tiktok/api/ListPostsInHashtagRequest?ch_id&amp;query_type&amp;type"</span> 
 </code></pre><h3 id='query-parameters-3'>Query Parameters</h3>
 <table><thead>
 <tr>
