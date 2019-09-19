@@ -29,7 +29,7 @@ This endpoint allows you to login to your account.
 
 Parameter | Description
 --------- | -----------
-mix_mode  | Type: Number. Defaults to 1. \\ Need more details...
+mix_mode  | Type: Number. Defaults to 1.
 username  | The unique username of the user.
 email     | Email address associated with the user's account.
 mobile    | Mobile phone number associated with the user's account.
@@ -48,7 +48,7 @@ Parameter      | Description
 ---------      | -----------
 category_list  | A list of categories.
 aweme_list     | A list of posts in the category.
-category_type  | The type of category. Type: Number. \\ 0 for hashtag?
+category_type  | The type of category. Type: Number.
 challenge_info | Information about the category. 
 desc           | A description of the category. For example: "Trending"
 
@@ -62,12 +62,8 @@ This endpoint allows you to retrieve a list of posts containing a specific hasht
 Parameter      | Description
 ---------      | -----------
 ch_id          | The ID of the hashtag.
-query_type     | ??? \\ Need more details...
-type           | ??? \\ Need more details...
-
-
--------------
-
+query_type     | Need description.
+type           | Need description.
 
 
 
