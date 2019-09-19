@@ -251,7 +251,8 @@
 <p>This reference includes documentation for 3 endpoints: LoginRequest, ListCategoriesRequest and ListPostsInHashtagRequest.</p>
 <h2 id='loginrequest'>LoginRequest</h2>
 <p>This endpoint allows you to login to your account.</p>
-<h3 id='query-parameters'>Query Parameters</h3>
+<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Authorization: 12398713987123987"</span> <span class="s2">"http://tiktok/api/LoginRequest?mix_mode&amp;username&amp;email&amp;password"</span>
+</code></pre><h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -287,10 +288,10 @@
 <td>The captcha answer. Optional - only required if captcha was shown.</td>
 </tr>
 </tbody></table>
-<pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://tiktok/api/LoginRequest"</span> -H <span class="s2">"Authorization: 12398713987123987"</span>
-</code></pre><h2 id='listcategoriesrequest'>ListCategoriesRequest</h2>
+<h2 id='listcategoriesrequest'>ListCategoriesRequest</h2>
 <p>This endpoint allows you to retrieve a list of popular categories (or hashtags). Returns ListCategoriesResponse.</p>
-<h3 id='query-parameters-2'>Query Parameters</h3>
+<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Authorization: 12398713987123987"</span> <span class="s2">"http://tiktok/api/ListCategoriesRequest?category_list&amp;aweme_list&amp;category_type"</span> 
+</code></pre><h3 id='query-parameters-2'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -318,10 +319,10 @@
 <td>A description of the category. For example: &quot;Trending&quot;</td>
 </tr>
 </tbody></table>
-<pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://tiktok/api/ListCategoriesRequest"</span> -H <span class="s2">"Authorization: 12398713987123987"</span>
-</code></pre><h2 id='listpostsinhashtagrequest'>ListPostsInHashtagRequest</h2>
+<h2 id='listpostsinhashtagrequest'>ListPostsInHashtagRequest</h2>
 <p>This endpoint allows you to retrieve a list of posts containing a specific hashtag. Returns ListPostsInHashtagResponse.</p>
-<h3 id='query-parameters-3'>Query Parameters</h3>
+<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Authorization: 12398713987123987"</span> <span class="s2">"http://tiktok/api/ListPostsInHashtagRequest?ch_id&amp;query_type&amp;type"</span> 
+</code></pre><h3 id='query-parameters-3'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -341,9 +342,8 @@
 <td>Need description.</td>
 </tr>
 </tbody></table>
-<pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://tiktok/api/ListPostsInHashtagRequest"</span> -H <span class="s2">"Authorization: 12398713987123987"</span>
-</code></pre><h1 id='errors'>Errors</h1>
-<p>The Hart API uses the following error codes:</p>
+<h1 id='errors'>Errors</h1>
+<p>The TikTok API uses the following error codes:</p>
 
 <table><thead>
 <tr>
@@ -361,31 +361,11 @@
 </tr>
 <tr>
 <td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>Forbidden -- This is hidden for administrators only.</td>
 </tr>
 <tr>
 <td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td>Not Found -- The specified user could not be found.</td>
 </tr>
 <tr>
 <td>500</td>
