@@ -29,10 +29,10 @@ This endpoint allows you to login to your account.
 
 Parameter | Description
 --------- | -----------
-mix_mode  | Type: Number. Defaults t 1.
-username  | The unique username of the user.
-email     | Email address associated with the user's account.
-mobile    | Mobile phone number associated with the user's account.
+{mix_mode}  | Type: Number. Defaults t 1.
+{username}  | The unique username of the user.
+{email}     | Email address associated with the user's account.
+{mobile}    | Mobile phone number associated with the user's account.
 
 
 
