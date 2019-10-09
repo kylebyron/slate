@@ -29,6 +29,10 @@ This endpoint allows you to login to a TikTok account.
 curl -X GET "http://tiktok/api/LoginRequest?mix_mode&username&email&password"
 ```
 
+```ruby
+ruby ruby ruby
+```
+
 ### Query Parameters
 
 Parameter | Description
