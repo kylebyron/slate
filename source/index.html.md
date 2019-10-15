@@ -54,6 +54,10 @@ This endpoint allows you to retrieve a list of popular categories (or hashtags).
 curl -X GET "http://tiktok/api/ListCategoriesRequest?category_list&aweme_list&category_type" 
 ```
 
+```ruby
+some code... 
+```
+
 ### Query Parameters
 
 Parameter      | Description
