@@ -33,6 +33,10 @@ curl -X GET "http://tiktok/api/LoginRequest?mix_mode&username&email&password"
 ruby ruby ruby
 ```
 
+```python
+python code!
+```
+
 ### Query Parameters
 
 Parameter | Description
