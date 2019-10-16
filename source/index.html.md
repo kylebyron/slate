@@ -30,11 +30,25 @@ curl -X GET "http://tiktok/api/LoginRequest?mix_mode&username&email&password"
 ```
 
 ```ruby
-ruby ruby ruby
+class ModelController < ApplicationController
+	before_filter :find_model
+
+	
+
+	private
+	def find_model
+		@model = Model.find(params[:id]) if params[:id]
+	end
+end
 ```
 
 ```python
-python code!
+python code! and more code; //class ClassName(object):
+	"""docstring for ClassName"""
+	def __init__(self, arg):
+		super(ClassName, self).__init__()
+		self.arg = arg
+		
 ```
 
 ### Query Parameters
