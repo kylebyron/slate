@@ -19,11 +19,9 @@ search: true
 
 # API Reference
 
-This reference includes documentation for 3 endpoints: LoginRequest, ListCategoriesRequest and ListPostsInHashtagRequest.
+This awesome reference includes documentation for 3 endpoints: LoginRequest, ListCategoriesRequest and ListPostsInHashtagRequest.
 
 ## LoginRequest
-
-This endpoint allows you to login to a TikTok account.
 
 ```shell
 curl -X GET "http://tiktok/api/LoginRequest?mix_mode&username&email&password"
@@ -32,9 +30,6 @@ curl -X GET "http://tiktok/api/LoginRequest?mix_mode&username&email&password"
 ```ruby
 class ModelController < ApplicationController
 	before_filter :find_model
-
-	
-
 	private
 	def find_model
 		@model = Model.find(params[:id]) if params[:id]
@@ -51,7 +46,8 @@ python code! and more code; //class ClassName(object):
 		
 ```
 
-new text
+This endpoint allows you to login to a TikTok account.
+
 
 ### Query Parameters
 
@@ -64,6 +60,7 @@ mobile    | Mobile phone number associated with the user's account.
 account   | The account number.
 password  | The account password.
 captcha   | The captcha answer. Optional - only required if captcha was shown.
+
 
 
 ## ListCategoriesRequest
